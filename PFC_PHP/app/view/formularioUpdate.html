@@ -1,0 +1,33 @@
+
+
+  
+    
+<div class="container">
+    <h1 class="mb-5"> Editar anotação </h1>
+    <form action="http://localhost/PFC_PHP/?pagina=anotacoes&metodo=atualizar" method="POST">
+        <div class="form-group">
+            
+            <input type="hidden" class="form-control mb-5" id="exampleFormControlInput1"  name="idAnotacao" value="{{idAnotacao}}" readonly>
+        </div>
+        <div class="form-group">
+            <label> Titulo da anotação </label>
+            <input type="text" class="form-control mb-5" id="exampleFormControlInput1" placeholder="Titulo da anotação" name="titulo_anotacaoNovo" value="{{Titulo}}">
+        </div>
+        <div class="form-group">
+            <label> Texto </label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mensagemNova"> {{Mensagem}}</textarea>
+        </div>
+        <div class="form-group">
+           
+            <input type="hidden" class="form-control mb-5 mt-5" id="exampleFormControlInput1" placeholder="id do usuario" name="idUsuario" value="{{idUsuario}}">
+            <!--<div class="alert alert-danger">
+                 por enquanto ir digitando o id do usuario, pois não temos  o cadastrar usuario e logar usuario <BR/>
+                 porém <b>  NÃO  EDITAR </b> o id usuario da anotação pois é apenas para testes
+            </div>
+        -->
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Atualizar </button>
+    </form>
+</div>
+
+
